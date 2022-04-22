@@ -1,2 +1,60 @@
+<div class="container d-flex flex-wrap justify-content-center my-4">
+  <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto input-group w-25">
+    <span class="input-group-text bg-white border-0" id="basic-addon"><i class='bx bx-search-alt-2'></i></span>
+    <input type="search" class="form-control border-0" placeholder="Search for a country..." aria-label="Search">
+  </form>
+
+
+  <div class="dropdown">
+    <button class="btn btn-light bg-white dropdown-toggle" type="button" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+      Filter by Region
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+      <li>
+        <button class="dropdown-item" type="button">Africa</button>
+      </li>
+      <li>
+        <button class="dropdown-item" type="button">America</button>
+      </li>
+      <li>
+        <button class="dropdown-item" type="button">Asia</button>
+      </li>
+      <li>
+        <button class="dropdown-item" type="button">Europe</button>
+      </li>
+      <li>
+        <button class="dropdown-item" type="button">Oceania</button>
+      </li>
+    </ul>
+  </div>
+
+  <!--  LOGIN & SIGNUP-->
+
+  <!--  <div class="text-end">-->
+  <!--    <button type="button" class="btn btn-light text-dark me-2">Login</button>-->
+  <!--    <button type="button" class="btn btn-primary">Sign-up</button>-->
+  <!--  </div>-->
+</div>
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <% @countries.each do |country| %>
+    <div class="col">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><%= country.name %></h5>
+          <p class="card-text">Population: <span class="text-muted"><%= country.population %></span></p>
+          <p class="card-text">Region: <span class="text-muted"><%= country.region %></span></p>
+          <p class="card-text">Capital: <span class="text-muted"><%= country.capital %></span></p>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+
+
 <h1>Countries#index</h1>
 <p>Find me in app/views/countries/index.html.erb</p>

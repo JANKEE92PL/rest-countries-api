@@ -10,22 +10,75 @@
       Filter by Region
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-      <li><button class="dropdown-item" type="button">Africa</button></li>
-      <li><button class="dropdown-item" type="button">America</button></li>
-      <li><button class="dropdown-item" type="button">Asia</button></li>
-      <li><button class="dropdown-item" type="button">Europe</button></li>
-      <li><button class="dropdown-item" type="button">Oceania</button></li>
+      <li>
+        <button class="dropdown-item" type="button">Africa</button>
+      </li>
+      <li>
+        <button class="dropdown-item" type="button">America</button>
+      </li>
+      <li>
+        <button class="dropdown-item" type="button">Asia</button>
+      </li>
+      <li>
+        <button class="dropdown-item" type="button">Europe</button>
+      </li>
+      <li>
+        <button class="dropdown-item" type="button">Oceania</button>
+      </li>
     </ul>
   </div>
 
-<!--  LOGIN & SIGNUP-->
+  <!--  LOGIN & SIGNUP-->
 
-<!--  <div class="text-end">-->
-<!--    <button type="button" class="btn btn-light text-dark me-2">Login</button>-->
-<!--    <button type="button" class="btn btn-primary">Sign-up</button>-->
-<!--  </div>-->
+  <!--  <div class="text-end">-->
+  <!--    <button type="button" class="btn btn-light text-dark me-2">Login</button>-->
+  <!--    <button type="button" class="btn btn-primary">Sign-up</button>-->
+  <!--  </div>-->
 </div>
 
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col" <% Country.each  %>>
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><%=  %></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a short card.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <h1>Countries#show</h1>
