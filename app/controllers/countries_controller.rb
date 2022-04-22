@@ -22,9 +22,9 @@ class CountriesController < ApplicationController
     @country = Country.find(params[:id])
   end
 
-  require 'rest-client'
 
   def fetch
+    require 'rest-client'
     endpoints = {
       all:  "https://restcountries.com/v2/all",
       name: "https://restcountries.com/v2/name/",
