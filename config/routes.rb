@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  root "countries#show"
+  get 'countries/new'
+  get 'countries/create'
+  get 'countries/update'
+  get 'countries/edit'
+  get 'countries/destroy'
+  get 'countries/index'
+  get 'countries/show'
 
-  # Defines the root path route ("/")
-  # root "articles#index"
 end
