@@ -19,5 +19,15 @@ class CountriesController < ApplicationController
   end
 
   def show
+    @country = Country.find(params[:id])
+  end
+
+  require 'rest-client'
+
+  def fetch
+    endpoints = {
+      all:  "https://restcountries.com/v2/all",
+      name: "https://restcountries.com/v2/name/",
+    }
   end
 end
