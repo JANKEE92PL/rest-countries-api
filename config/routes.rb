@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "countries#show"
+  root "countries#index"
   get 'countries/new'
   get 'countries/create'
   get 'countries/update'
