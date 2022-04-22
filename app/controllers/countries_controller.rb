@@ -29,5 +29,7 @@ class CountriesController < ApplicationController
       all:  "https://restcountries.com/v2/all",
       name: "https://restcountries.com/v2/name/",
     }
+    response = RestClient.get(endpoints["all"])
+    render json: response
   end
 end
