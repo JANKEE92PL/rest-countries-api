@@ -22,14 +22,14 @@ class CountriesController < ApplicationController
     @country = Country.find(params[:id])
   end
 
+  private
 
-  def fetch
-    require 'rest-client'
-    endpoints = {
-      all:  "https://restcountries.com/v2/all",
-      name: "https://restcountries.com/v2/name/",
-    }
-    response = RestClient.get(endpoints["all"])
+  require 'rest-client'
+
+  def fetch_name(name)
+    endpoint = "https://restcountries.com/v2/name/#{name}"
+    response = RestClient.get(endpoint)
     render json: response
   end
+
 end
